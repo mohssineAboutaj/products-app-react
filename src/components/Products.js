@@ -5,11 +5,12 @@ class Products extends Component {
   render() {
     return (
       <div className="products-component">
-        {
-          this.props.list.map((p, i) => {
-            return <ProductItem key={i} item={p} />
-          })
-        }  
+        <div className="row">
+          { this.props.list.map((p, i) => {
+              return <ProductItem key={i} item={p} id={i} />
+            })
+          }
+        </div>
       </div>
     )
   }

@@ -1,19 +1,40 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans|Roboto:400,700&display=swap");
+
 body {
   background-color: #e7e7e7;
 }
 
+/* Start app styling */
+.app h1 {
+  font-family: "Montserrat", "Roboto", sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 700;
+}
+.app .icon {
+  color: #55b7d3;
+}
+/* End app styling */
+
+/* Start products container */
+.products-component {
+  width: 95%;
+  margin: 0 auto;
+}
+/* End products container */
+
 /* Start product card */
 .product-card {
+  padding: 0;
+  width: 100%;
   margin: 10px auto;
   max-width: 300px;
   border-radius: 10px;
   background-color: white;
-  box-shadow: 5px 5px 10px #686868;
+  box-shadow: 5px 5px 7px #686868;
 }
 .product-card .product-img {
   width: 100%;
-  @extends %no-pm;
 }
 .product-card .product-info {
   padding: 15px;
@@ -22,6 +43,7 @@ body {
 .product-card .product-info .product-title {
   font-family: "Montserrat", "Roboto", sans-serif;
   text-transform: capitalize;
+  font-weight: 400;
   font-size: 1.5em;
   margin-bottom: 10px;
 }
@@ -48,14 +70,12 @@ body {
 .product-card .product-info .product-rate {
   margin: 10px 0;
 }
-.product-card .product-info .product-rate i {
+.product-card .product-info .product-rate .icon {
   margin: 3px;
-}
-.product-card .product-info .product-rate i.fas {
-  color: #686868;
-}
-.product-card .product-info .product-rate i.far {
   color: #a7a7a7;
+}
+.product-card .product-info .product-rate .icon.active {
+  color: #686868;
 }
 .product-card .product-info .product-description {
   font-family: "Open Sans", sans-serif;
@@ -84,7 +104,7 @@ body {
 .product-card .product-info .product-btn button:hover {
   background-color: #1e7e34;
 }
-.product-card .product-info .product-btn button i {
+.product-card .product-info .product-btn button .icon {
   margin: 0 10px;
 }
 

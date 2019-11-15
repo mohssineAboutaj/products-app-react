@@ -1,13 +1,18 @@
 import React, { Component } from 'react'
-import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+import '@mohssineaboutaj/grid-system/css/grid-system.min.css';
 import './App.css';
 import Products from './components/Products'
 import Axios from 'axios';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faReact } from '@fortawesome/free-brands-svg-icons';
 
 class App extends Component {
-  apiUrl = "https://my-json-server.typicode.com/mohssineAboutaj/Products/Products"
+  apiUrl = "https://my-json-server.typicode.com/mohssineAboutaj/api/products"
   axiosOptions = {
     method: 'GET',
+    headers:{
+      'Content-Type': 'application/json',
+    },
   }
 
   state = {
@@ -27,8 +32,10 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <h1>hello</h1>
+      <div className="app">
+        <h1>
+          Products <FontAwesomeIcon icon={faReact} className="icon" /> App
+        </h1>
         <Products list={this.state.productList} />
       </div>
     )

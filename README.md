@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Products App React
+
+A simple app show cards of products from [Fake Product API](https://github.com/mohssineAboutaj/api) using Reactjs & Axios[Reactjs](https://reactjs.org/) & [Axios](https://github.com/axios/axios)
 
 ## Available Scripts
 

@@ -2,8 +2,15 @@
   "name": "products-app-react",
   "version": "1.0.0",
   "private": false,
+  "description": "A simple app show cards of products from an API using Reactjs & Axios",
+  "main": "index.js",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-regular-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.7",
+    "@mohssineaboutaj/grid-system": "^1.0.5",
     "axios": "^0.19.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
@@ -14,7 +21,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "yarn build && gh-pages -d build"
+    "deploy:netlify": "netlify deploy --prod",
+    "deploy:github": "gh-pages -d build",
+    "deploy:all": "npm run deploy:netlify && npm run deploy:github"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,11 +39,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "A simple app show cards of products using Reactjs",
-  "main": "index.js",
-  "devDependencies": {
-    "gh-pages": "^2.1.1"
   },
   "repository": {
     "type": "git",
@@ -52,5 +56,8 @@
   "bugs": {
     "url": "https://github.com/mohssineAboutaj/products-app-react/issues"
   },
-  "homepage": "https://mohssineAboutaj.github.io/products-app-react"
+  "homepage": "https://mohssineAboutaj.github.io/products-app-react",
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
+  }
 }
