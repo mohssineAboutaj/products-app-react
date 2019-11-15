@@ -16,12 +16,44 @@ body {
 }
 /* End app styling */
 
-/* Start products container */
-.products-component {
+/* Start global style */
+.container {
   width: 95%;
   margin: 0 auto;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-weight: 700;
+  color: #272727;
+}
 /* End products container */
+
+/* Start navbar */
+nav {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+nav a {
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  color: #272727;
+  display: block;
+  transition: all .5s ease-in-out;
+  border-bottom: 2px solid #272727;
+}
+
+nav a.active,
+nav a:hover,
+nav a:focus {
+  border-bottom-color: #686868;
+  color: #686868;
+}
+/* End navbar */
 
 /* Start product card */
 .product-card {
