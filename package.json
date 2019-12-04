@@ -22,9 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy:netlify": "netlify deploy --prod",
-    "deploy:github": "gh-pages -d build",
-    "deploy:all": "npm run deploy:netlify && npm run deploy:github"
+    "deploy": "netlify deploy --prod",
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -57,8 +55,5 @@
   "bugs": {
     "url": "https://github.com/mohssineAboutaj/products-app-react/issues"
   },
-  "homepage": "https://mohssineAboutaj.github.io/products-app-react",
-  "devDependencies": {
-    "gh-pages": "^2.1.1"
-  }
+  "homepage": "https://products-app-react.netlify.com"
 }
